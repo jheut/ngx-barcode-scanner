@@ -25,7 +25,7 @@ export class BarecodeScannerLivestreamOverlayComponent implements OnDestroy {
 
     @Output() started = new EventEmitter<boolean>();
 
-    @ViewChild(BarecodeScannerLivestreamComponent)
+    @ViewChild(BarecodeScannerLivestreamComponent, { static: true })
     scanner: BarecodeScannerLivestreamComponent;
 
     private _showScanner = false;

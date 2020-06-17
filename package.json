@@ -9,6 +9,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
+    "postinstall": "ngcc",
     "package": "ng build ngx-barcode-scanner && cd dist/ngx-barcode-scanner && npm pack",
     "release": "ng build ngx-barcode-scanner && cp README.md dist/ngx-barcode-scanner && cd dist/ngx-barcode-scanner && npm publish"
   },
@@ -33,19 +34,19 @@
     "imageprocessing"
   ],
   "dependencies": {
-    "@angular/animations": "^7.2.0",
-    "@angular/common": "^7.2.0",
-    "@angular/compiler": "^7.2.0",
-    "@angular/core": "^7.2.0",
-    "@angular/forms": "^7.2.0",
-    "@angular/platform-browser": "^7.2.0",
-    "@angular/platform-browser-dynamic": "^7.2.0",
-    "@angular/router": "^7.2.0",
+    "@angular/animations": "^9.1.11",
+    "@angular/common": "^9.1.11",
+    "@angular/compiler": "^9.1.11",
+    "@angular/core": "^9.1.11",
+    "@angular/forms": "^9.1.11",
+    "@angular/platform-browser": "^9.1.11",
+    "@angular/platform-browser-dynamic": "^9.1.11",
+    "@angular/router": "^9.1.11",
+    "quagga": "^0.12.1",
     "bootstrap": "^4.3.1",
     "core-js": "^2.5.4",
     "ngx-bootstrap": "^3.1.1",
-    "quagga": "^0.12.1",
-    "rxjs": "^6.3.3",
+    "rxjs": "^6.5.5",
     "tslib": "^1.10.0",
     "zone.js": "~0.10.2"
   },
@@ -53,8 +54,8 @@
     "@angular-devkit/build-angular": "~0.901.8",
     "@angular-devkit/build-ng-packagr": "~0.901.8",
     "@angular/cli": "~9.1.8",
-    "@angular/compiler-cli": "^7.2.0",
-    "@angular/language-service": "^7.2.0",
+    "@angular/compiler-cli": "^9.1.11",
+    "@angular/language-service": "^9.1.11",
     "@types/jasmine": "~2.8.9",
     "@types/jasminewd2": "~2.0.5",
     "@types/node": "^12.11.1",
@@ -70,6 +71,6 @@
     "protractor": "~5.4.1",
     "ts-node": "~5.0.1",
     "tslint": "~5.9.1",
-    "typescript": "~3.2.2"
+    "typescript": "~3.8.3"
   }
 }

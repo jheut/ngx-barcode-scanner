@@ -22,7 +22,7 @@ export class BarecodeScannerLivestreamComponent implements OnChanges, OnDestroy 
 
     @Output() started = new EventEmitter();
 
-    @ViewChild('BarecodeScanner') barecodeScanner;
+    @ViewChild('BarecodeScanner', { static: true }) barecodeScanner;
 
     private _started = false;
 
