@@ -1,3 +1,5 @@
+import { QuaggaJSConfigObject } from '@ericblade/quagga2';
+
 export const DEFAULT_CONFIG = {
     inputStream: {
         name: 'Live',
@@ -20,7 +22,7 @@ export const DEFAULT_CONFIG = {
     decoder: {
         readers: ['code_128_reader']
     }
-} as QuaggaConfig;
+} as QuaggaJSConfigObject;
 
 export interface QuaggaConfig {
     inputStream: {

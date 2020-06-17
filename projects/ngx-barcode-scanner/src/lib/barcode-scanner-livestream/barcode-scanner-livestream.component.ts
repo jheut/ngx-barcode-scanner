@@ -1,7 +1,7 @@
 import {
     Component, Input, Output, ViewChild, OnDestroy, ViewEncapsulation, OnChanges, SimpleChanges, EventEmitter
 } from '@angular/core';
-import * as Quagga from 'quagga';
+import Quagga, { QuaggaJSConfigObject } from '@ericblade/quagga2';
 import { mapToReader } from './barcode-types';
 import { DEFAULT_CONFIG, QuaggaConfig } from './barcode-scanner-livestream.config';
 
@@ -30,7 +30,7 @@ export class BarecodeScannerLivestreamComponent implements OnChanges, OnDestroy 
         return this._started;
     }
 
-    private configQuagga: QuaggaConfig = DEFAULT_CONFIG;
+    private configQuagga: QuaggaJSConfigObject = DEFAULT_CONFIG;
 
     ngOnDestroy(): void {
         this.stop();
